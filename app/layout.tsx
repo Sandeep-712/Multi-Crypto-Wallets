@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import RecoilProvider from "@/providers/RecoilProvider";
+import ToasterProvider from "@/providers/Toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/Designer-removebg-preview.png"
+      />
+      <meta
+        name="description"
+        content="Demostrate how the blockchain wallet and token can easily be send from one account to another"
+      />
+      <meta
+        name="keywords"
+        content="crypto, wallet, blockchain, cryptocurrency, secure"
+      />
+      <meta name="Sandeep" content="Sandeep Son's" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="blockchain" content="Multi Crypto Wallet" />
+      <title>Multi Crypto Wallet</title>
+      <body className={inter.className}>
+        <RecoilProvider>
+          <ToasterProvider />
+          {children}
+        </RecoilProvider>
+      </body>
     </html>
   );
 }
