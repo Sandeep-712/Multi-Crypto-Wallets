@@ -80,6 +80,14 @@ const Airdrop = () => {
       .catch(() => toast.error(`Failed to copy ${type.toLocaleLowerCase()}.`));
   };
 
+  const truncateAddress = (address: String | undefined, length: number) => {
+    if (!address) return;
+
+    return address.length > length
+      ? `${address.substring(0, length)}...`
+      : address;
+  };
+
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div
@@ -129,7 +137,7 @@ const Airdrop = () => {
                   }}
                 >
                   <div className="d-flex justify-content-center align-items-center">
-                    {selectedWallet?.key.substring(0, 30) + "...."}
+                    {truncateAddress(selectedWallet?.key, 30)}
                   </div>
                   <div
                     onClick={() =>

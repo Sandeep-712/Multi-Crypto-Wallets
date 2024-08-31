@@ -120,7 +120,7 @@ export default function WalletsPage() {
 
   const handleSelect = (wallet: Wallet) => {
     setSelectedWallet(wallet);
-    router.push("/airdrop");
+    router.push("/airdrop")
   };
 
   const truncateAddress = (address: String, length: number) => {
