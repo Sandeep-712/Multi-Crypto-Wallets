@@ -22,7 +22,7 @@ export const generateBitcoinWallet = async (mnemonic: string, index: number): Pr
 
     if (address === undefined) throw new Error('Could not generate bitcoin address');
 
-    return { key: child.publicKey.toString(), address: address, privateKey: child.toWIF(), type: 'btc', amount: 0 };
+    return { key: child.publicKey.toString('hex'), address: address, privateKey: child.toWIF(), type: 'btc', amount: 0 };
 }
 
 
