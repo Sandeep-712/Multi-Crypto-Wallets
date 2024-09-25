@@ -10,9 +10,6 @@ Try out the live demo here 👉 https://multi-crypto-wallets.vercel.app/
 
 ---
 
-
----
-
 ## **System Architecture 🏗️**
 
 The project follows a modern crypto-wallet system architecture with wallet generation, account creation, and transaction processing as core modules.
