@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Crypto Wallet Manager 🚀**
 
-## Getting Started
+Welcome to **Crypto Wallet Manager**, a decentralized wallet management platform. This project provides users the ability to create, manage, and interact with multiple cryptocurrency wallets (Bitcoin, Ethereum, Solana) seamlessly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Live Demo 🌐**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Try out the live demo here 👉 https://multi-crypto-wallets.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **System Architecture 🏗️**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project follows a modern crypto-wallet system architecture with wallet generation, account creation, and transaction processing as core modules.
+![image](https://github.com/user-attachments/assets/cc662286-211c-47fd-8660-bdee10791a9b)
+1. **Wallet Generation**: Generates wallets based on mnemonic phrases.
+2. **Account Management**: Creates and manages multiple accounts under a single wallet type.
+3. **Transaction Module**: Handles sending/receiving transactions across multiple blockchain networks.
+4. **Balance Inquiry**: Provides real-time balance data for each wallet.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **Features ✨**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Multi-Wallet Support**: Manage wallets for Bitcoin, Ethereum, and Solana.
+- **Mnemonic Generation**: Generate secure mnemonic phrases for wallet creation.
+- **Account Management**: View and manage multiple accounts under each wallet.
+- **Wallet Actions**:
+  - **Create Wallet**: Securely generate a new wallet.
+  - **Transaction Support**: Send and receive cryptocurrency across multiple chains.
+  - **Balance Check**: View wallet balances.
+  - **Airdrop (devnet)**: Claim test tokens for Solana.
+- **User-friendly and Responsive UI**: A smooth experience across devices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## **Technology Stack 🔧**
+
+- **Nextjs** ⚛️ - UI Components & State Management
+- **HTML5** 📄 - Structuring the UI
+- **CSS3** 🎨 - Custom styling
+- **TypeScript** 🚀 - Logic and interactivity
+- **VS Code** 🖥️ - Code editor
+- **Git** ⚙️ - Version control
+- **GitHub** 🛠️ - Source code hosting
+
+
+## **Installation & Setup 🚀**
+
+Follow these steps to run the Crypto Wallet Manager locally:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Sandeep-712/Multi-Crypto-Wallets.git
+
+2. Navigate to the project directory:
+   ```
+   cd Multi-Crypto-Wallets
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+5. Open your web browser and visit `http://localhost:3000` to access the website.
+
+
+## Usage Instructions 📖
+
+1. Create Wallet
+Generate a new wallet using a mnemonic phrase.
+
+2. Add Account
+Create multiple accounts within each wallet type.
+
+3. Send Crypto
+Make transactions by entering the recipient's public address and amount.
+
+4. View Wallet Info
+Check the account balance and public address for each wallet.
+
+5. Airdrop (devnet)
+Get free test tokens for Solana using the airdrop feature.
+
+---
+
+# Feedback 💬
+
+We value your feedback! If you encounter any issues, bugs, or have suggestions for improvement, feel free to open an issue in the repository.
+
+---
+# Contributing 🤝
+
+Contributions are welcome! Please follow these steps if you'd like to contribute:
+
+1. Fork the repository.
+2. Create a new branch with your feature or bugfix.
+3. Make your changes and commit.
+4. Submit a pull request, making sure to explain your changes.
+---
+# License 📄
+
+This project is licensed under the MIT License - see the LICENSE file for details.
